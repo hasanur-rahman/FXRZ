@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name TCf48.bin
+dimension-values: 3
+500 500 100 
+TCf48.bin file opened
+Read data set composed of 25000000 entries.
+num of data entries 25000000
+Sampled data percentage: 1.5625%
+sampled value range 104.81390953
+closeness threshold: 6.844669973478, non constant block fraction: 0.679547991071
+Feature-extraction time: 0.05801600
+Average value recalculation time 0.00838000
+Non-constant block calculation time: 0.00456800
+Total time cost: 0.070964

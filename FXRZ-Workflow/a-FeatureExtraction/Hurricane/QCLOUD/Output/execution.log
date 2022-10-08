@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name QCLOUDf48.bin.log.dat
+dimension-values: 3
+500 500 100 
+QCLOUDf48.bin.log.dat file opened
+Read data set composed of 25000000 entries.
+num of data entries 25000000
+Sampled data percentage: 1.5625%
+sampled value range 30.03452492
+closeness threshold: 4.459473431628, non constant block fraction: 0.709123883929
+Feature-extraction time: 0.05752300
+Average value recalculation time 0.00825100
+Non-constant block calculation time: 0.00355100
+Total time cost: 0.069325

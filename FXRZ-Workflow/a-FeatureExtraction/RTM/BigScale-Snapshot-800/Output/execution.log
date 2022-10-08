@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name snpData_0800_849X849X235.dat
+dimension-values: 3
+235 849 849 
+snpData_0800_849X849X235.dat file opened
+Read data set composed of 169388235 entries.
+num of data entries 169388235
+Sampled data percentage: 1.5803%
+sampled value range 0.04944255
+closeness threshold: 0.003872154459, non constant block fraction: 0.555486968450
+Feature-extraction time: 0.27089400
+Average value recalculation time 0.05720300
+Non-constant block calculation time: 0.01720100
+Total time cost: 0.345298

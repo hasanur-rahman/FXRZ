@@ -1,0 +1,3059 @@
+target cratio 60.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 60
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21100.1
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 389884
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25444
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1377
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 478
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 60.00 end >>>>
+
+target cratio 84.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 84
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 20996.9
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 394468
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25569
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1361
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 463
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 84.00 end >>>>
+
+target cratio 100.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 100
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21021.6
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 389884
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25539
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1377
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 466
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 100.00 end >>>>
+
+target cratio 130.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 130
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21059.5
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 389884
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25493
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1377
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 465
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 130.00 end >>>>
+
+target cratio 150.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 150
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21165.8
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 398568
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 220
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25365
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1347
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 475
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 150.00 end >>>>
+
+target cratio 170.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 170
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21151.6
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 395049
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 218
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25382
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1359
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 467
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 170.00 end >>>>
+
+target cratio 184.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 184
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21035.6
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 395631
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25522
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1357
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 466
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 184.00 end >>>>
+
+target cratio 200.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 200
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21091.8
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 393312
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 218
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25454
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1365
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 471
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 200.00 end >>>>
+
+target cratio 222.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 222
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21190
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 399458
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25336
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1344
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 485
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 222.00 end >>>>
+
+
+target cratio 250.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 250
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+rank={0,1,} iter={4} input={0.12,} output={918.356,} objective={918.356}
+rank={0,1,} iter={5} input={0.103996,} output={848.604,} objective={848.604}
+final_iter={6} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 21179.2
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 397977
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 25349
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1349
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 487
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 250.00 end >>>>
+
+target cratio 302.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 302
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 49719.5
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 393024
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 218
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10798
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1366
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 463
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 302.00 end >>>>
+
+target cratio 319.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 319
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 49372
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 397388
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 230
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10874
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1351
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 480
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 319.00 end >>>>
+
+target cratio 357.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 357
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.0139964,} output={301.773,}
+composite:compression_rate <double> = 49513.1
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 393600
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 37.0598
+error_stat:average_error <double> = 66781.4
+error_stat:difference_range <double> = 1.6987e+06
+error_stat:error_range <double> = 849350
+error_stat:max_error <double> = 849350
+error_stat:max_rel_error <double> = 0.0139964
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.19728e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 54.8795
+error_stat:rmse <double> = 109420
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0139964, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[301.773, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.10604
+size:compressed_size <uint64> = 1779058
+size:compression_ratio <double> = 301.773
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10843
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1364
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 468
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 357.00 end >>>>
+
+target cratio 390.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 390
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49858
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 397388
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10768
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1351
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 465
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 390.00 end >>>>
+
+target cratio 420.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 420
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49668.9
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 397977
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 220
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10809
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1349
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 470
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 420.00 end >>>>
+
+target cratio 432.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 432
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49747.1
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 393024
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10792
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1366
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 463
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 432.00 end >>>>
+
+target cratio 450.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 450
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49609.2
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 400053
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10822
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1342
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 481
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 450.00 end >>>>
+
+target cratio 480.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 480
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49435.6
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 392163
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 216
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10860
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1369
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 465
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 480.00 end >>>>
+
+target cratio 491.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 491
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49742.5
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 379146
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 231
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10793
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1416
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 483
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 491.00 end >>>>
+
+target cratio 510.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 510
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49825.6
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 398568
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10775
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1347
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 464
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 510.00 end >>>>
+
+target cratio 528.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 528
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+final_iter={2} inputs={0.03,} output={443.737,}
+composite:compression_rate <double> = 49830.2
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 396507
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = -41.6163
+error_stat:average_error <double> = 74764.4
+error_stat:difference_range <double> = 3.64101e+06
+error_stat:error_range <double> = 1.82051e+06
+error_stat:max_error <double> = 1.82051e+06
+error_stat:max_rel_error <double> = 0.03
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 1.63989e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 53.5133
+error_stat:rmse <double> = 128058
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.03, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[443.737, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0721148
+size:compressed_size <uint64> = 1209886
+size:compression_ratio <double> = 443.737
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 218
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 10774
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1354
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 465
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 528.00 end >>>>
+
+target cratio 556.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 556
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+final_iter={4} inputs={0.0563291,} output={605.56,}
+composite:compression_rate <double> = 29578
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 407338
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 18.3068
+error_stat:average_error <double> = 90696.6
+error_stat:difference_range <double> = 6.83643e+06
+error_stat:error_range <double> = 3.41823e+06
+error_stat:max_error <double> = 3.41823e+06
+error_stat:max_rel_error <double> = 0.0563287
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 2.18681e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 52.2633
+error_stat:rmse <double> = 147879
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0563291, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[605.56, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0528436
+size:compressed_size <uint64> = 886569
+size:compression_ratio <double> = 605.56
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 217
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 18151
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1318
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 464
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 556.00 end >>>>
+
+target cratio 572.00
+composite:names <char*[]> = {}
+composite:plugins <char*[]> = {size, time, }
+composite:scripts <char*[]> = {}
+dist_gridsearch:num_bins <data> = data{ type=uint64_t dims={1, } has_data=[3, ]}
+dist_gridsearch:overlap_percentage <data> = data{ type=double dims={1, } has_data=[0.2, ]}
+dist_gridsearch:search <char*> = "fraz"
+distributed:mpi_comm <void*> = 0x6041e0
+distributed:n_worker_groups <uint32> = 0
+distributed:root <uint32> = 0
+fraz:nthreads <uint32> = 1
+metrics:copy_compressor_results <int32> = 1
+metrics:errors_fatal <int32> = 1
+opt:compressor <char*> = "sz"
+opt:do_decompress <int32> = 1
+opt:evaluations <data> = data{ type=byte dims={} has_data=false}
+opt:global_rel_tolerance <double> = 0.2
+opt:inputs <char*[]> = {sz:rel_err_bound, }
+opt:inter_iteration <uint32> = 0
+opt:is_integral <data> = data{ type=uint8_t dims={0, } has_data=false}
+opt:local_rel_tolerance <double> = 0.01
+opt:lower_bound <data> = data{ type=double dims={1, } has_data=[0, ]}
+opt:max_iterations <uint32> = 2
+opt:max_seconds <uint32> = 4294967295
+opt:metric <char*> = "composite"
+opt:objective_mode <uint32> = 1
+opt:objective_mode_name <char*> = <empty>
+opt:output <char*[]> = {size:compression_ratio, }
+opt:search <char*> = "dist_gridsearch"
+opt:search_metrics <char*> = "progress_printer"
+opt:target <double> = 572
+opt:upper_bound <data> = data{ type=double dims={1, } has_data=[0.15, ]}
+pressio:abs <double> = <empty>
+pressio:metric <char*> = "composite"
+pressio:rel <double> = 0.0001
+sz:abs_err_bound <double> = 0.0001
+sz:accelerate_pw_rel_compression <int32> = 1
+sz:app <char*> = "SZ"
+sz:config_file <char*> = <empty>
+sz:config_struct <void*> = <empty>
+sz:data_type <double> = <empty>
+sz:error_bound_mode <int32> = 1
+sz:error_bound_mode_str <char*> = <empty>
+sz:exafel:bin_size <uint32> = 0
+sz:exafel:calib_panel <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:num_peaks <uint32> = 0
+sz:exafel:peak_size <uint32> = 0
+sz:exafel:peaks_cols <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_rows <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:peaks_segs <data> = data{ type=byte dims={} has_data=false}
+sz:exafel:sz_dim <uint32> = 0
+sz:exafel:tolerance <double> = 0
+sz:gzip_mode <int32> = 3
+sz:lossless_compressor <int32> = 1
+sz:max_quant_intervals <uint32> = 65536
+sz:metric <char*> = "composite"
+sz:pred_threshold <float> = 0.99
+sz:prediction_mode <int32> = <empty>
+sz:protect_value_range <int32> = 0
+sz:psnr_err_bound <double> = 90
+sz:pw_rel_err_bound <double> = 0.001
+sz:quantization_intervals <uint32> = 0
+sz:rel_err_bound <double> = 0.0001
+sz:sample_distance <int32> = 100
+sz:segment_size <int32> = 36
+sz:snapshot_cmpr_step <int32> = 5
+sz:sol_id <int32> = 101
+sz:sz_mode <int32> = 1
+sz:user_params <void*> = 0
+time:metric <char*> = "error_stat"
+
+rank={0,1,} iter={0} input={0.03,} output={443.737,} objective={443.737}
+rank={0,1,} iter={1} input={0.0139964,} output={301.773,} objective={301.773}
+rank={0,1,} iter={2} input={0.075,} output={702.271,} objective={702.271}
+rank={0,1,} iter={3} input={0.0563291,} output={605.56,} objective={605.56}
+final_iter={4} inputs={0.0563291,} output={605.56,}
+composite:compression_rate <double> = 29561.7
+composite:compression_rate_many <double> = <empty>
+composite:decompression_rate <double> = 407029
+composite:decompression_rate_many <double> = <empty>
+error_stat:average_difference <double> = 18.3068
+error_stat:average_error <double> = 90696.6
+error_stat:difference_range <double> = 6.83643e+06
+error_stat:error_range <double> = 3.41823e+06
+error_stat:max_error <double> = 3.41823e+06
+error_stat:max_rel_error <double> = 0.0563287
+error_stat:min_error <double> = 0
+error_stat:min_rel_error <double> = 0
+error_stat:mse <double> = 2.18681e+10
+error_stat:n <uint64> = 134217728
+error_stat:psnr <double> = 52.2633
+error_stat:rmse <double> = 147879
+error_stat:value_max <double> = 3.21629e+07
+error_stat:value_mean <double> = 359.09
+error_stat:value_min <double> = -2.85207e+07
+error_stat:value_range <double> = 6.06836e+07
+error_stat:value_std <double> = 4.27314e+06
+opt:input <data> = data{ type=double dims={1, } has_data=[0.0563291, ]}
+opt:msg <char*> = ""
+opt:output <data> = data{ type=double dims={1, } has_data=[605.56, ]}
+opt:status <int32> = 0
+size:bit_rate <double> = 0.0528436
+size:compressed_size <uint64> = 886569
+size:compression_ratio <double> = 605.56
+size:decompressed_size <uint64> = 536870912
+size:uncompressed_size <uint64> = 536870912
+time:begin_check_options <uint32> = <empty>
+time:begin_compress <uint32> = 219
+time:begin_compress_many <uint32> = <empty>
+time:begin_decompress <uint32> = 0
+time:begin_decompress_many <uint32> = <empty>
+time:begin_get_configuration <uint32> = <empty>
+time:begin_get_options <uint32> = 0
+time:begin_set_options <uint32> = <empty>
+time:check_options <uint32> = <empty>
+time:compress <uint32> = 18161
+time:compress_many <uint32> = <empty>
+time:decompress <uint32> = 1319
+time:decompress_many <uint32> = <empty>
+time:end_check_options <uint32> = <empty>
+time:end_compress <uint32> = 0
+time:end_compress_many <uint32> = <empty>
+time:end_decompress <uint32> = 470
+time:end_decompress_many <uint32> = <empty>
+time:end_get_configuration <uint32> = <empty>
+time:end_get_options <uint32> = 0
+time:end_set_options <uint32> = 0
+time:get_configuration <uint32> = <empty>
+time:get_options <uint32> = 0
+time:set_options <uint32> = <empty>
+
+<<<< target cratio 572.00 end >>>>
+
+finished

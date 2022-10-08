@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name einspline.tile_2-1101314-2.spin_1.816x115x69x69.pre.dat
+dimension-values: 3
+69 69 93840 
+einspline.tile_2-1101314-2.spin_1.816x115x69x69.pre.dat file opened
+Read data set composed of 446772240 entries.
+num of data entries 446772240
+Sampled data percentage: 1.7013%
+sampled value range 36.13355827
+closeness threshold: 2.730289988381, non constant block fraction: 0.695928388747
+Feature-extraction time: 0.78273600
+Average value recalculation time 0.18466000
+Non-constant block calculation time: 0.07467600
+Total time cost: 1.042072

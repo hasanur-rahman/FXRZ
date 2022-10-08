@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name velocity_x.f32.bin
+dimension-values: 3
+512 512 512 
+velocity_x.f32.bin file opened
+Read data set composed of 134217728 entries.
+num of data entries 134217728
+Sampled data percentage: 1.5625%
+sampled value range 49312264.00000000
+closeness threshold: 3345781.309749348089, non constant block fraction: 0.505859375000
+Feature-extraction time: 0.21925900
+Average value recalculation time 0.04563700
+Non-constant block calculation time: 0.01809800
+Total time cost: 0.282994

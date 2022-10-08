@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name dark_matter_density.f32.bin.log.dat
+dimension-values: 3
+512 512 512 
+dark_matter_density.f32.dat file opened
+Read data set composed of 134217728 entries.
+num of data entries 134217728
+Sampled data percentage: 1.5625%
+sampled value range 10.79982972
+closeness threshold: 1.073674065910, non constant block fraction: 0.914306640625
+Feature-extraction time: 0.25676500
+Average value recalculation time 0.05117900
+Non-constant block calculation time: 0.02083500
+Total time cost: 0.328779

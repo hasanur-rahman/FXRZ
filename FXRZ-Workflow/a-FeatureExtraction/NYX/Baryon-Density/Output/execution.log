@@ -1,0 +1,17 @@
+
+
+
+ ================  extractFeaturesAndDetNonconstantBlocks start ================
+datafile name baryon_density.f32.dat
+dimension-values: 3
+512 512 512 
+baryon_density.f32.dat file opened
+Read data set composed of 134217728 entries.
+num of data entries 134217728
+Sampled data percentage: 1.5625%
+sampled value range 4.90035450
+closeness threshold: 0.145669857482, non constant block fraction: 0.979278564453
+Feature-extraction time: 0.21686800
+Average value recalculation time 0.04480300
+Non-constant block calculation time: 0.01783700
+Total time cost: 0.279508
