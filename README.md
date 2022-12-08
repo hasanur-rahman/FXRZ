@@ -1,4 +1,4 @@
-# FXRZ: A Feature-Driven Fixed-Ratio Lossy Compression Framework for Real-World Scientific Datasets
+# [ICDE'23](https://icde2023.ics.uci.edu/research-papers-track) FXRZ: A Feature-Driven Fixed-Ratio Lossy Compression Framework for Real-World Scientific Datasets
 
 Authors: Md Hasanur Rahman (mdhasanur-rahman@uiowa.edu), Sheng Di (sdi1@anl.gov), Kai Zhao (kzhao016@ucr.edu), Robert Underwood (runderwood@anl.gov), Guanpeng Li (guanpeng-li@uiowa.edu) and Franck Cappello (cappello@mcs.anl.gov)
 
