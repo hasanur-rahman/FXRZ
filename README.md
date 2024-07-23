@@ -2,7 +2,7 @@ A Feature-Driven Fixed-Ratio Lossy Compression Framework for Real-World Scientif
 =====
 
 * Published in 39th IEEE International Conference on Data Engineering (ICDE), 2023. 
-* Authors: [Md Hasanur Rahman](https://hasanur-rahman.github.io), Sheng Di, Kai Zhao, Robert Underwood, Guanpeng Li and Franck Cappello. 
+* Authors: Md Hasanur Rahman, Sheng Di, Kai Zhao, Robert Underwood, Guanpeng Li and Franck Cappello. 
 * This project was done with the collaboration of Argonne National Laboratory.
 
 ## Research Goal
